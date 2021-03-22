@@ -22,3 +22,10 @@ build:
       sync:
         infer:
           - "**/*.js"
+    - image: idamerete/tickets
+      context: tickets
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        infer:
+          - "src/**/*.ts"
