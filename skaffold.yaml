@@ -15,3 +15,10 @@ build:
       sync:
         infer:
           - "src/**/*.ts"
+    - image: idamerete/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        infer:
+          - "**/*.js"
