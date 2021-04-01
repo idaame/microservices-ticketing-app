@@ -29,3 +29,10 @@ build:
       sync:
         infer:
           - "src/**/*.ts"
+    - image: idamerete/orders
+      context: orders
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        infer:
+          - "src/**/*.ts"
