@@ -43,3 +43,10 @@ build:
       sync:
         infer:
           - "src/**/*.ts"
+    - image: idamerete/payments
+      context: payments
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        infer:
+          - "src/**/*.ts"
