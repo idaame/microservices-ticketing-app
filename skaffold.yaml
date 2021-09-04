@@ -36,3 +36,10 @@ build:
       sync:
         infer:
           - "src/**/*.ts"
+    - image: idamerete/expiration
+      context: expiration
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        infer:
+          - "src/**/*.ts"
