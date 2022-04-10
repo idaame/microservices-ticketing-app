@@ -4,7 +4,7 @@ on:
     paths:
       - 'auth/**'
 jobs:
-  tests-auth:
+  build:
     name: tests-auth
     runs-on: ubuntu-latest
     steps:
